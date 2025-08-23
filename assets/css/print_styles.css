@@ -1,0 +1,341 @@
+/* Base Body Styles */
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'abdo', sans-serif; /* Default to abdo for overall Arabic content */
+    font-size: 12pt; /* Default font size for non-print */
+    background-color: white; /* Ensure white background for consistency */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Universal Box Sizing */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* For Firefox compatibility */
+}
+
+/* Page Container for Screen View */
+.page-container {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0; /* Remove margin as body already handles it */
+    padding: 1cm; /* Standard page padding */
+    box-sizing: border-box;
+    background-color: white;
+    /* overflow-x: hidden; - Moved to body */
+}
+
+/* Header Table Styles (for logos and main ministry text) */
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+    direction: ltr; /* Left-to-right direction for header table structure */
+    table-layout: fixed; /* Ensures column widths are respected */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.header-logo-container {
+    width: 15%; /* Width for logo columns */
+    vertical-align: middle;
+    text-align: start; /* Align content to the start (left for LTR) */
+}
+
+.header-text-center {
+    width: 70%; /* Width for central text column */
+    text-align: center;
+}
+
+/* Logo Sizing */
+.flag-logo,
+.mew-logo,
+.kuwait-logo {
+    display: block; /* Ensures they take up full width and allows margin auto */
+    margin: 0 auto; /* Center logos horizontally */
+    max-width: 100%; /* Responsive sizing */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.flag-logo {
+    width: 90px !important;
+}
+
+.mew-logo {
+    width: 40px !important;
+}
+
+.kuwait-logo {
+    width: 130px !important;
+}
+
+/* Main Header Text Styles (Arabic) */
+.main-header-text {
+    display: block; /* Each span on its own line */
+    line-height: 1.2; /* Spacing between lines */
+    font-family: 'abdo', sans-serif; /* Explicitly set to abdo */
+    color: black;
+}
+
+.main-header-text.bold-text {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.main-header-text.fs-4-custom {
+    font-size: 14pt;
+    font-weight: normal; /* As per your HTML */
+}
+
+.main-header-text.fs-5-custom {
+    font-size: 13pt;
+}
+
+.main-header-text.fs-6-custom {
+    font-size: 12pt;
+    font-weight: normal; /* As per your HTML */
+}
+
+/* Main Report Section Heading (Arabic) */
+.section-heading {
+    font-family: 'abdo', sans-serif; /* Ensure abdo for the main report title */
+    font-size: 14pt;
+    display: block;
+    padding-bottom: 5px;
+    font-weight: normal; /* Your HTML used fw-normal here */
+}
+
+.header-separator {
+    border-top: thin solid #333; /* Line below the main report title */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Main Attendance Table (English content and data) */
+.main-attendance-table {
+    margin-top: 20px; /* Space above the table */
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for clean lines */
+    border: none; /* No outer border on the table */
+}
+
+/* Table Header Group - for Arabic section in table header */
+.main-attendance-table thead .arabic-section {
+    font-family: 'abdo' !important;
+}
+
+.main-attendance-table thead .english-section {
+    font-family: 'calibri' !important;
+}
+
+/* Table Header Row (English Headers) */
+.main-attendance-table .table-header-custom th {
+    border: thin solid #333; /* Borders for header cells */
+    font-size: 12.5pt; /* Font size for screen view */
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif; /* Explicitly Calibri for English headers */
+    background-color: #f2f2f2; /* Light grey background */
+    vertical-align: top;
+    text-align: center;
+    padding: 5px; /* Cell padding */
+}
+
+/* Table Body (English Data) */
+.main-attendance-table tbody {
+    font-family: 'Calibri', sans-serif; /* Explicitly Calibri for body content */
+}
+.main-attendance-table tfoot tr {
+    border: none;
+}
+
+.main-attendance-table tbody td {
+    border: thin solid #333; /* Borders for data cells */
+    font-size: 12.5pt; /* Font size for screen view */
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px; /* Cell padding */
+    color: black;
+}
+
+.table-data-cell-left {
+    text-align: left; /* Specific alignment for name column */
+}
+
+/* Table Striping (ensure backgrounds are respected) */
+.table-striped > tbody > tr:nth-of-type(odd) > *,
+.table-striped > tbody > tr:nth-of-type(even) > * {
+    background-color: inherit; /* Inherit background to allow for alternating rows */
+}
+
+.main-attendance-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Light grey for odd rows */
+}
+
+.main-attendance-table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Table Footer Group (Arabic signatures and page info) */
+.table-footer-group {
+    display: table-footer-group;
+    border: none !important; /* Remove any border on the footer group */
+    font-family: 'abdo', sans-serif; /* Set footer group to abdo */
+}
+
+.table-footer-group td {
+    border: none !important; /* Remove borders from footer cells */
+    padding: 0 !important; /* Remove padding from footer cells */
+    background-color: white !important; /* Ensure white background for footer */
+}
+
+/* Signature Table within Footer */
+.signature-table {
+    margin-top: 20px; /* Space above signature section */
+    width: 100%;
+    border-collapse: collapse;
+    border: none !important; /* Crucial for removing the borders */
+    background-color: white !important; /* Set background to white */
+    font-family: 'abdo', sans-serif; /* Explicitly set for signature lines */
+}
+
+.signature-table td {
+    border: none !important; /* Crucial for removing cell borders */
+    padding: 0px; /* Reset padding for signature cells */
+    background-color: white !important; /* Set background to white */
+    font-family: 'abdo', sans-serif; /* Explicitly set for signature cells */
+}
+
+.signature-line {
+    width: 20%; /* Width for signature columns */
+    padding: 0px 0px 80px 0px; /* Padding for screen view, pushes text to bottom for signature space */
+    font-weight: bold;
+    font-size: 15pt !important;
+    vertical-align: bottom;
+    font-family: 'abdo', sans-serif; /* Explicitly set for signature lines */
+    color: black;
+}
+
+/* This class was mentioned in print_styles.css but doesn't appear in the HTML snippets */
+.footer-info-cell {
+    font-family: 'Calibri', sans-serif;
+    background-color: transparent !important;
+    font-weight: bold;
+    font-size: 10pt;
+    vertical-align: top;
+    text-align: center;
+    border: none !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Print Specific Styles */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact; /* Ensure background colors are printed */
+        print-color-adjust: exact;
+        font-family: 'abdo', sans-serif !important; /* Ensure abdo for print body */
+    }
+
+    @page {
+        size: A4 landscape; /* Print in landscape A4 */
+        margin: 0; /* No default print margins */
+    }
+
+    .page-container {
+        width: 29.7cm; /* Full width for landscape A4 */
+        min-height: 21cm; /* Min height for landscape A4 (height is portrait width) */
+        margin: 0;
+        padding: 1cm;
+        box-shadow: none;
+        background-color: white;
+        /* page-break-after: always; - Remove if you want content to flow across pages */
+    }
+
+    .hide-on-print, .hide_print { /* Combined for clarity */
+        display: none !important; /* Hide elements not meant for print */
+    }
+
+    /* Print Logo Sizing */
+    .flag-logo {
+        width: 68px !important;
+    }
+
+    .kuwait-logo {
+        width: 98px !important;
+    }
+
+    .mew-logo {
+        width: 30px !important;
+    }
+
+    /* Print Header Text Sizing */
+    .main-header-text.bold-text {
+        font-size: 14pt;
+    }
+
+    .main-header-text.fs-4-custom {
+        font-size: 12pt;
+    }
+
+    .main-header-text.fs-5-custom {
+        font-size: 11pt;
+    }
+
+    .main-header-text.fs-6-custom {
+        font-size: 10pt;
+    }
+
+    /* Print Section Heading */
+    .section-heading {
+        font-size: 12pt !important;
+        padding-bottom: 0px !important;
+        font-family: 'abdo', sans-serif !important; /* Ensure abdo for print section-heading */
+    }
+
+    /* Print Signature Line */
+    .signature-line {
+        font-size: 13pt !important;
+        padding: 0px 0px 20px 0px !important; /* Reduced padding for print */
+        font-family: 'abdo', sans-serif !important; /* Ensure abdo for print signature-line */
+    }
+
+    /* Print Table Header Cells (English) */
+    .main-attendance-table .table-header-custom th {
+        border: thin solid #333 !important; /* Ensure borders print */
+        background-color: #e0e0e0 !important; /* Ensure background prints */
+        font-size: 10pt !important; /* Smaller font for print */
+        font-weight: bold;
+        font-family: 'Calibri', sans-serif !important; /* Ensure Calibri for print English headers */
+        padding: 3px !important; /* Reduced padding for print */
+    }
+
+    /* Print Table Body Cells (English) */
+    .main-attendance-table tbody td {
+        border: thin solid #333 !important; /* Ensure borders print */
+        font-size: 9pt !important; /* Smaller font for print */
+        font-family: 'Calibri', sans-serif !important; /* Ensure Calibri for print table body */
+        padding: 3px !important; /* Reduced padding for print */
+    }
+
+    /* Ensure table footer borders are off and background is white in print */
+    .table-footer-group,
+    .main-attendance-table tfoot td, /* This is the key addition/modification for the outer footer cell */
+    .signature-table,
+    .signature-table td {
+        border: none !important;
+        background-color: white !important;
+    }
+
+    /* Ensure specific font-families for footer elements in print */
+    .table-footer-group {
+        font-family: 'abdo', sans-serif !important;
+    }
+
+    .footer-info-cell {
+        font-family: 'Calibri', sans-serif !important;
+    }
+
+    /* Adjusted margin-top for main table in print */
+    .main-attendance-table {
+        margin-top: 10px;
+    }
+}

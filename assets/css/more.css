@@ -1,0 +1,39 @@
+body{
+	font-family: "Abdo";
+}
+.modal{
+	color: #000;
+}
+.card-body{
+	background: none;
+	border: #fff;
+}
+.card-img{
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+}
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+	direction: ltr;
+}
+.en{
+	font-family: "Calibri";
+}
+.white{
+	color: #FFFFFF;
+}
+.b{
+	font-weight: bold;
+}
+.a_ {
+		color: white;
+}
+.a_:hover{
+	color: #00ffff;
+	text-decoration: none;
+}
+

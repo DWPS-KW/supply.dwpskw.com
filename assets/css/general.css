@@ -1,0 +1,193 @@
+body {
+	font-family: "abdo";
+	color: #FFFFFF;
+	background: url("../images/back_dark_1.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+nav {
+	background-image: url("../images/c.png");
+	box-shadow: 0px 3px 10px black;
+	font-family: "abdo";
+	color: #CCCCCC;
+	font-size: larger;
+	vertical-align: middle;
+}
+
+.navbar {
+	padding: 0px;
+} 
+.nav-item{
+	vertical-align: middle;
+}
+
+.container {
+	background-image: url("../images/c.png");
+	margin-top: 50px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.fav{
+	background: #006699;
+	color: white;
+}
+.fav:hover{
+	background: #005079;
+	color: white;
+}
+.search-div {
+    border-radius: 10px;
+    padding: 2%;
+    width: 100%; /* Full width */
+    max-width: 100%; /* Optional, ensures full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically if needed */
+}
+
+.container-div {
+    background-image: url("../images/b.png");
+    margin: 50px auto; /* Auto horizontal margin centers it */
+    border-radius: 10px;
+    padding: 1% ;
+    width: 95%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+}
+
+
+#empsData .card-body {
+	 direction: ltr;
+    text-align: left;
+    padding: 10px;
+}
+
+#empsData .card-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #003366;
+}
+
+#empsData .card-subtitle {
+    font-size: 13pt;
+    color: #555;
+    line-height: 1.4;
+}
+
+#empsData .info-block {
+
+    margin-bottom: 8px;
+}
+
+#empsData .info-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 11pt;
+}
+
+#empsData .info-value {
+    font-size: 13pt;
+    color: #555;
+}
+
+.special-section-card {
+	background-color: #cae5f7; /* Example: light red background */
+	border: 2px solid #b4b4b4; /* Optional: border for emphasis */
+}
+
+.emp_info_title_color {
+	color: #000000;
+}
+
+.pt-6 {
+    padding-top: 4rem; /* or any value you need */
+}
+
+.modal_label {
+	color: #006699;
+	font-weight: bold;
+	font-size: 16pt;
+}
+/* 
+table,
+th,
+td {
+	text-align: center;
+}
+
+.navbar-logo {
+	margin: 0px;
+	width: auto;
+	height: auto;
+}
+.modal-body{
+	color: #006699;
+}
+
+.signing{
+	font-size: 20pt;
+}
+
+.card-title{
+	font-size: 12pt;
+}
+.card-subtitle {
+	font-size: 10pt;
+}
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+	direction: ltr;
+}
+.en{
+	font-family: "Calibri";
+}
+.white{
+	color: #FFFFFF;
+}
+.b{
+	font-weight: bold;
+}
+.left{
+	text-align: left;
+}
+.en{
+	font-family: calibri;
+}
+.a_ {
+	color: white;
+}
+.a_:hover{
+	color: #00ffff;
+	text-decoration: none;
+}
+
+.repSelects{
+	border: thin solid #00ccff;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.repSelects label{
+	color: white;
+}
+
+.option_icon{
+	width: 20px;
+	height: auto;
+}
+
+.card-img{
+	width: 100%;
+	height: 250px;
+}
+
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+        margin-top: 0px;
+    }
+} */

@@ -1,0 +1,25 @@
+
+.signing{
+    font-size: x-large;
+}
+.pdata{
+    font-weight: 100;
+}
+.fav{
+	background: #006699;
+	color: white;
+}
+.fav:hover{
+	background: #005079;
+	color: white;
+}
+body{
+    color: black;
+}
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+        margin-top: 0px;
+    }
+}

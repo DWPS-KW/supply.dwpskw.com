@@ -1,0 +1,103 @@
+		@font-face {
+			font-family: 'old_antic';
+			src: url('../fonts/old_antic.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'ae_nada_r';
+			src: url('../fonts/ae_nada_r.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'rsail_b';
+			src: url('../fonts/rsail_b.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'arabweb';
+			src: url('../fonts/arabweb.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'arslan_a';
+			src: url('../fonts/arslan_a.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'arslan_b';
+			src: url('../fonts/arslan_b.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'hafs';
+			src: url('../fonts/hafs.otf') format('opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'roqa';
+			src: url('../fonts/roqa.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'taha_r';
+			src: url('../fonts/taha_r.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'suls_r';
+			src: url('../fonts/suls_r.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'ruq3a_b';
+			src: url('../fonts/aref-ruqrq.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'abdo';
+			src: url('../fonts/abdo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'b_lotus_r';
+			src: url('../fonts/b_lotus_r.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'g_lotus_r';
+			src: url('../fonts/g_lotus_r.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'trajan_b';
+			src: url('../fonts/TrajanPro-Bold.otf') format('opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
+		@font-face {
+			font-family: 'trajan_r';
+			src: url('../fonts/TrajanPro-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+

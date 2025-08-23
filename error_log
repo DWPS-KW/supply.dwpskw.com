@@ -1,0 +1,21 @@
+[25-Jun-2025 15:59:01 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.29. in /home2/dwpskwco/supply.dwpskw.com/vendor/composer/platform_check.php on line 28
+[26-Jun-2025 05:23:10 America/Chicago] PHP Warning:  require(/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php): Failed to open stream: No such file or directory in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:10 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/dwpskwco/supply.dwpskw.com/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:13 America/Chicago] PHP Warning:  require(/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php): Failed to open stream: No such file or directory in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:13 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/dwpskwco/supply.dwpskw.com/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:15 America/Chicago] PHP Warning:  require(/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php): Failed to open stream: No such file or directory in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:15 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/dwpskwco/supply.dwpskw.com/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:18 America/Chicago] PHP Warning:  require(/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php): Failed to open stream: No such file or directory in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48
+[26-Jun-2025 05:23:18 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/dwpskwco/supply.dwpskw.com/./app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/dwpskwco/supply.dwpskw.com/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home2/dwpskwco/supply.dwpskw.com/index.php on line 48

@@ -1,0 +1,20 @@
+body{
+    background: none;
+}
+
+.container-fluid{
+    background: none;
+    color: #000;
+    margin-top: 50px;
+    padding: 2%;
+}
+
+#srchRes_desktop{
+    background: white;
+    direction: ltr;
+}
+
+#srchRes_desktop a{
+    font-size: 18px;
+    text-decoration: none;
+}

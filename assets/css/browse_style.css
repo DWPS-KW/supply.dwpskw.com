@@ -1,0 +1,11 @@
+
+#srchRes_desktop{
+    background: white;
+    color: #006699;
+    direction: ltr;
+}
+
+#srchRes_desktop a{
+    font-size: 18px;
+    color: #006699;
+}

@@ -1,0 +1,144 @@
+/*
+ * CSS for Fingerprint Report Layout
+ * Separated from the view for better maintainability and caching.
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-size: 12pt;
+    color: #000;
+    text-align: left;
+    font-family: "Calibri", sans-serif !important;
+    line-height: 1.4; /* Enhanced: Improved readability */
+    text-rendering: optimizeLegibility; /* Enhanced: Better font rendering */
+    -webkit-font-smoothing: antialiased; /* Enhanced: Smoother fonts on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Enhanced: Smoother fonts on Firefox */
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox compatibility */
+}
+
+/* Page container for print layout */
+.page {
+    direction: ltr; /* Explicitly left-to-right, consider for mixed content */
+    width: 21cm; /* A4 width */
+    min-height: 29.7cm; /* A4 height */
+    padding: 1.5cm; /* Enhanced: Slightly more internal padding for better aesthetics */
+    margin: 1cm auto; /* Centered on the page */
+    border: 1px solid #D3D3D3;
+    border-radius: 8px; /* Enhanced: Slightly more rounded corners */
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced: More prominent shadow */
+    text-align: center; /* Used for centering block content within the page */
+}
+
+/* Subpage, typically for internal content alignment within .page */
+.subpage {
+    width: 100%;
+    text-align: center;
+}
+
+/* Table styling for fingerprint data */
+.fp_table {
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: collapse; /* Merges borders between cells */
+    margin-top: 15px; /* Spacing from previous elements */
+}
+
+.fp_table th {
+    font-family: "candara", sans-serif; /* Fallback font */
+    font-weight: 700; /* Enhanced: Slightly bolder for headers */
+    background: #e0f7fa; /* Enhanced: Lighter, more modern background color */
+    border: 1px solid #a7d9de; /* Enhanced: Consistent, slightly darker border */
+    padding: 10px 5px; /* Enhanced: More padding for readability */
+    text-align: center; /* Centralized header text */
+    vertical-align: middle; /* Ensures text is vertically centered */
+}
+
+.fp_table td {
+    border: 1px solid #ccc; /* Enhanced: Slightly lighter border for data cells */
+    color: #333; /* Enhanced: Darker text for better contrast */
+    padding: 8px 5px; /* Enhanced: More padding for readability */
+    font-size: 11pt; /* Slightly smaller font for dense data */
+    text-align: center; /* Centralized data text */
+    vertical-align: middle; /* Ensures text is vertically centered */
+}
+
+.fp_table td.text-right {
+    text-align: right; /* Specific class for right alignment if needed */
+}
+
+/* Print-specific styles */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        background: none;
+    }
+
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: none; /* No shadow in print */
+        background: initial;
+        page-break-after: always; /* Ensure each .page starts on a new print page */
+    }
+
+    /* Reduce margins/padding for print if content is too large */
+    .page {
+        padding: 0.8cm;
+    }
+}
+
+/* Additional style for header information */
+.header-info {
+    font-size: 11pt;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.header-info strong {
+    font-size: 14pt;
+    color: #2196F3; /* Enhanced: Highlight month with a color */
+}
+
+/* Table for employee details */
+.employee-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.employee-details-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left; /* Default left for text */
+}
+
+.employee-details-table td:first-child {
+    font-weight: 600;
+    width: 20%; /* Keep file no. column narrow */
+    background-color: #f5f5f5; /* Light background for labels */
+}
+
+.employee-details-table td:last-child {
+    background-color: #eee;
+    font-weight: 500;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 25px 0; /* More spacing for separator */
+}
