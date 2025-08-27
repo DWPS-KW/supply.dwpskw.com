@@ -49,7 +49,6 @@
             <input type="hidden" name="fp_type" value="<?= esc($fp_type ?? ''); ?>" />
             <input type="hidden" name="query" value="<?= esc($_SERVER['QUERY_STRING'] ?? ''); ?>" />
 
-
             <div class="main-attendance-section">
                 <p class="section-heading text-center bold-text mb-2">
                     كشف بيان أسماء العمالة الموردة لعمالة شركة الغانم انترناشيونال - عن شهر <?= esc($month_year_ar); ?><br>
@@ -70,6 +69,7 @@
                             <th class="text-center" style="width: 10%;">Name</th>
                             <th class="text-center" style="width: 8%;">Civil ID</th>
                             <th class="text-center" style="width: 7%;">Technical Category</th>
+                            <th class="text-center" style="width: 7%;">Section</th>
                             <!-- Modified Headers for Manual and Calculated Values -->
                             <th class="text-center" style="width: 6%;">Working Days<br>(Manual)</th>
                             <th class="text-center" style="width: 6%;">Working Days<br>(System)</th>
@@ -114,6 +114,15 @@
                                     </td>
                                     <td class="text-center">
                                         <?= esc(ucwords(strtolower($emp->design_name ?? ''))); ?>
+                                    </td>
+                                    <td class="text-center">
+                                        <?php
+                                            if($emp->sec_id != 2){
+                                                echo esc(ucwords(strtolower($emp->sec_name_english ?? '')));
+                                            }else{
+                                                 echo esc(ucwords(strtolower($emp->sub_sec_name_english ?? '')));
+                                            }
+                                        ?>
                                     </td>
                                     <!-- Working Days Manual Input - Changed to type="text" -->
                                     <td class="text-center">
